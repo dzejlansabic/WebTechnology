@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <title>Mocha Tests</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+   <link rel="stylesheet" href="sale.css" />
+   <link rel="stylesheet" href="rezervacija.css" />
+   <style>
+   td{
+     border: 1px solid black;
+     height: 20px;
+     width: 20px;
+   }
+   </style>
+ </head>
+ <body>
+   <div id="ispis"></div>
+   <div id="mocha"></div>
+
+    <div class="okvir">
+        <div class="meni">
+                <div class="logo">
+                    <img id="slika" src="photos/logo.jpg" alt="Slika logo">
+                </div>
+                <ul id="lista-meni">
+                        <li> <a href="pocetna.html">Početna</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                        <li><a href="unos.html">Unos</a></li>
+                        <li><a id="odabraniLink" href="rezervacija.html">Rezervacije</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rn0e7k3Cc9o&list=RDMMrn0e7k3Cc9o&start_radio=1">Osobe</a></li>
+                    </ul>
+        </div>
+        <div class="sadrzaj">
+        <form id="formaSale">
+            <label for="sale">Sale: </label>
+                <select name="sale" id="sale">
+                    <option value="0-01">0-01</option>
+                    <option value="0-02">0-02</option>
+                    <option value="0-03">0-03</option>
+                    <option value="1-00">1-00</option>
+                    <option value="1-01">1-01</option>
+                    <option value="1-02">1-02</option>
+                    <option value="1-03">1-03</option>
+                    <option value="1-15">1-15</option>
+                    <option value="VA">VA</option>
+                </select>
+                <label for="periodicna">Periodična</label>
+                <input type="checkbox" name="periodicna" id="periodicna">
+                <label for="pocetak">Početak:</label>
+                <input type="time" name="pocetak" id="pocetak">
+                <label for="kraj">Kraj:</label>
+                <input type="time" name="kraj" id="kraj">
+        </form>
+        <div id="kalendar">
+                <div class="mjesec"></div>
+                <div class="dan">
+                        <div>PON</div>
+                        <div>UTO</div>
+                        <div>SRI</div>
+                        <div>ČET</div>
+                        <div>PET</div>
+                        <div>SUB</div>
+                        <div>NED</div>
+                </div>
+                <div id="datumi" class="datum">
+                    
+                </div>
+        </div>
+        
+        </div>
+        <div id="dugmad">
+            <button id="dugme1">Prethodni</button>
+            <button id="dugme2">Sljedeći</button>
+        </div>
+    </div>
+
+
+   <script src="https://unpkg.com/chai/chai.js"></script>
+   <script src="https://unpkg.com/mocha/mocha.js"></script>
+ 
+   <script class="mocha-init">
+     mocha.setup('bdd');
+     mocha.checkLeaks();
+   </script>
+   <script src="kalendar.js"></script>
+   <script src="testoviS2.js"></script>
+   <script class="mocha-exec">
+     mocha.run();
+   </script>
+ </body>
+</html>

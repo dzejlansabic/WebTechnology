@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.idOsoblje {
+    max-height:max-content;
+    font-size: 40px;
+    margin-right: 20px;
+    margin-bottom: auto;
+    padding: 20px;
+}
+.idSala{
+    font-size: 40px;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+#desniDiv {
+    width: 45%;
+    margin-bottom: auto;
+    float: right;
+}
+#lijeviDiv {
+    width: 45%;
+    margin-bottom: auto;
+    float: left;
+}

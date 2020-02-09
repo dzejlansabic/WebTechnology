@@ -1,0 +1,103 @@
+#formaSale {
+    border: blue solid 2px;
+    margin: 5px;
+    padding: 7px;
+}
+#formaSale label {
+    margin-left: 25px;
+}
+
+.datum .zauzeta  {
+    border-bottom-color:red solid 20px;
+}
+.datum .slobodna {
+    border-bottom-color: green solid 20 px;
+}
+.mjesec {
+    border: none;
+    margin: 10px;
+}
+.dan ,
+.datum {
+    text-align: center;
+    margin: 7px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.dan div {
+    border: blue solid 2px;
+    margin: 4px;
+}
+.pojedinacanDatum {
+    border: blue solid 2px;
+    margin: 4px;
+    border-bottom:green solid 20px;
+}
+.datum :first-child {
+    grid-column: 5;
+  }
+#dugme1 {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        float: left;
+}
+#dugme2 {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        float: right;
+}
+#dugmad {
+    background-color:skyblue;
+    visibility: inherit;
+}
+#kalendar {
+    border: blue solid 2px;
+}
+@media screen and (max-width: 600px)  {
+    
+    #formaSale input , select {
+        margin-left: 5px;
+        display: block;
+        
+    }
+    #formaSale label {
+        margin-left: 5px;
+    }
+    .dan {
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: none;
+        float: left;
+        margin-top: 1px;
+    }   
+    .datum {
+        grid-template-columns: none;
+        grid-template-rows: repeat(7, 1fr);
+
+    }
+    .datum div:nth-child(n+11) {
+        display: none;
+    }
+    .datum div:nth-child(-n+3) {
+        display: none;
+    }
+    .datum div {
+        height: 22px;
+        width: 40px;
+        
+    }
+    .dan div {
+        height: 22px;
+        width: 40px;
+        
+    }
+}

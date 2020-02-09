@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: lightskyblue;
+}
+.okvir {
+    margin: auto;
+    width: 59%;
+}
+.logo {
+    margin-top: 21px;
+    box-sizing: border-box;
+    background-color: orange;
+    position: absolute;
+    width: 80px;
+    right:47%;
+    height: 80px;
+    top: 0;
+
+}
+.meni {
+    background-color: dodgerblue;
+    padding: 10px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+#lista-meni {
+    background-color: dodgerblue;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+a {
+    color: black;
+}
+#lista-meni li {
+    color: black;
+    display: inline;
+    margin: 8px;
+}
+#odabraniLink {
+    text-decoration: none;
+}
+.tabelaSala, th, td{
+    max-width: 100%;
+    vertical-align: top;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    padding: 8px;
+    background-color: white;
+}
+.headerRedni:nth-child(1) {
+    background-color: lightgray;
+}
+.headerSprat {
+    background-color: silver;
+}
+#nultaCelija {
+    background-color: dodgerblue;
+    border-left: hidden;
+    border-top: hidden;
+}
+.sadrzaj {
+    background: transparent;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin:auto;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+.sala {
+    vertical-align: top;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+.slobodnaSala {
+    background-color: green;
+}
+.zauzetaSala {
+    background-color: red;
+}
+.kancelarija {
+    background-color: skyblue;
+}
+#slika {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #lista-meni li {
+        color: black;
+        display: block;
+        margin: 8px;
+    }
+    .headerRedni {
+        display: none;
+    }
+    .headerRedni:nth-child(1) {
+        display: none;
+        background-color: lightgray;
+    }
+    .headerSprat {
+        display: none;
+        background-color: silver;
+    }
+    #nultaCelija {
+        display: none;
+    }
+    .logo {
+        margin-top: 10px;
+        box-sizing: border-box;
+        background-color: orange;
+        position: absolute;
+        width: 80px;
+        right:40%;
+        height: 80px;
+        top: 0;
+    
+    }
+}

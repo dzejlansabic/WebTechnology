@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/sale.css">
+        <link rel="stylesheet" href="/css/rezervacija.css">
+        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+        <title>Rezervacije</title>
+    </head>
+    <body>
+        <div class="okvir">
+            <div class="meni">
+                    <div class="logo">
+                        <img id="slika" src="/photos/logo.jpg" alt="Slika logo">
+                    </div>
+                    <ul id="lista-meni">
+                            <li> <a href="/html/pocetna.html">Početna</a></li>
+                            <li><a href="/html/sale.html">Sale</a></li>
+                            <li><a href="/html/unos.html">Unos</a></li>
+                            <li><a id="odabraniLink" href="/html/rezervacija.html">Rezervacije</a></li>
+                            <li><a href="/html/osobe.html">Osobe</a></li>
+                        </ul>
+            </div>
+            <div class="sadrzaj">
+            <form id="formaSale">
+                <label for="sale">Sale: </label>
+                    <select name="sale" id="sale">
+                        <option value="0-01">0-01</option>
+                        <option value="0-02">0-02</option>
+                        <option value="0-03">0-03</option>
+                        <option value="1-00">1-00</option>
+                        <option value="1-01">1-01</option>
+                        <option value="1-02">1-02</option>
+                        <option value="1-11">1-11</option>
+                        <option value="1-15">1-15</option>
+                        <option value="VA">VA</option>
+                    </select>
+                    <label for="periodicna">Periodična</label>
+                    <input type="checkbox" name="periodicna" id="periodicna">
+                    <label for="pocetak">Početak:</label>
+                    <input type="time" name="pocetak" id="pocetak">
+                    <label for="kraj">Kraj:</label>
+                    <input type="time" name="kraj" id="kraj">
+                    <label for="osoblje">Osoblje: </label>
+                    <select name="osoblje" id="osoblje">
+                       
+                    </select>
+            </form>
+            <div id="kalendar">
+                    <div class="mjesec"></div>
+                    <div class="dan">
+                            <div>PON</div>
+                            <div>UTO</div>
+                            <div>SRI</div>
+                            <div>ČET</div>
+                            <div>PET</div>
+                            <div>SUB</div>
+                            <div>NED</div>
+                    </div>
+                    <div id="datumi" class="datum">
+                        
+                    </div>
+            </div>
+            
+            </div>
+            <div id="dugmad">
+                <button id="dugme1">Prethodni</button>
+                <button id="dugme2">Sljedeći</button>
+            </div>
+        </div>
+
+    <script src="/js/kalendar.js"></script>
+    <script src="/js/Pozivi.js"></script>
+    <script src="/js/rezervacija.js"></script>
+    </body>
+</html> 

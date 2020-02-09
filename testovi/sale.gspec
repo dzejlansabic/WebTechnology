@@ -1,0 +1,37 @@
+@objects
+    logo .logo
+    meni .meni
+    sadrzaj .sadrzaj
+    lista-meni #lista-meni
+    tabelaSala .tabelaSala
+
+@groups
+    kostur_elementi   meni, sadrzaj
+
+= Kostur =
+    &kostur_elementi:
+        centered horizontally inside screen
+
+=Logo=
+    logo:
+        near meni -50px top
+        "should be squared" width 100% of logo/height
+
+
+= meni =
+    meni:
+        width ~ 60 % of screen/width
+        centered horizontally inside screen
+        contains partly logo 
+        height 10 to 20 % of screen/height
+        above sadrzaj 10 px
+        inside screen 40 to 60 px top
+        
+
+=tabelaSala=
+    tabelaSala:
+        inside sadrzaj
+
+=lista-meni=
+    lista-meni:
+        inside meni

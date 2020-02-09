@@ -1,0 +1,474 @@
+{
+  "testId" : "1-unos.gspec",
+  "name" : "unos.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  unos.gspec --url http://localhost/unos.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: unos.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573677527459,
+          "sections" : [ {
+            "name" : "Kostur",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 13
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "meni", "screen" ]
+              } ]
+            }, {
+              "name" : "sadrzaj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "sadrzaj", "screen" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Logo",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 17
+            },
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "near meni -50px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-50px",
+                  "realDistance" : "-50px"
+                } ],
+                "highlight" : [ "logo", "meni" ]
+              } ],
+              "specGroups" : [ {
+                "name" : "should be squared",
+                "specs" : [ {
+                  "status" : "info",
+                  "place" : {
+                    "filePath" : "unos.gspec",
+                    "lineNumber" : 20
+                  },
+                  "name" : "width 100% of logo/height",
+                  "meta" : [ {
+                    "from" : {
+                      "object" : "logo",
+                      "edge" : "left"
+                    },
+                    "to" : {
+                      "object" : "logo",
+                      "edge" : "right"
+                    },
+                    "expectedDistance" : "100% [80px]",
+                    "realDistance" : "100% [80px]"
+                  } ],
+                  "highlight" : [ "logo" ]
+                } ]
+              } ]
+            } ]
+          }, {
+            "name" : "meni",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 23
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "width ~ 60 % of screen/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "58 to 62% [586 to 627px]",
+                  "realDistance" : "58% [597px]"
+                } ],
+                "highlight" : [ "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "contains partly logo",
+                "highlight" : [ "meni", "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "height 10 to 20 % of screen/height",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10 to 20% [68 to 137px]",
+                  "realDistance" : "14% [98px]"
+                } ],
+                "highlight" : [ "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "above sadrzaj 10 px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "sadrzaj",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "meni", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside screen 40 to 60 px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "40 to 60px",
+                  "realDistance" : "50px"
+                } ],
+                "highlight" : [ "meni", "screen" ]
+              } ]
+            } ]
+          }, {
+            "name" : "inputi-*",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 39
+            },
+            "objects" : [ {
+              "name" : "inputi-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "inputi-1", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "above inputi-2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-1",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "inputi-2",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-1", "inputi-2" ]
+              } ]
+            }, {
+              "name" : "inputi-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "inputi-2", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "below inputi-1",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-2",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "inputi-1",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-2", "inputi-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "above inputi-3",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-2",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "inputi-3",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "23px"
+                } ],
+                "highlight" : [ "inputi-2", "inputi-3" ]
+              } ]
+            }, {
+              "name" : "inputi-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "inputi-3", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 51
+                },
+                "name" : "below inputi-2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-3",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "inputi-2",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "23px"
+                } ],
+                "highlight" : [ "inputi-3", "inputi-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "above inputi-4",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-3",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "inputi-4",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-3", "inputi-4" ]
+              } ]
+            }, {
+              "name" : "inputi-4",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "inputi-4", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "below inputi-3",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-4",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "inputi-3",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-4", "inputi-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "above inputi-5",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-4",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "inputi-5",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-4", "inputi-5" ]
+              } ]
+            }, {
+              "name" : "inputi-5",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "inputi-5", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "below inputi-4",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "inputi-5",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "inputi-4",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "inputi-5", "inputi-4" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 207, 50, 597, 98 ]
+            },
+            "inputi-4" : {
+              "area" : [ 494, 273, 143, 18 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1012, 687 ]
+            },
+            "logo" : {
+              "area" : [ 456, 20, 80, 80 ]
+            },
+            "inputi-5" : {
+              "area" : [ 455, 299, 100, 22 ]
+            },
+            "inputi-2" : {
+              "area" : [ 495, 206, 140, 18 ]
+            },
+            "inputi-3" : {
+              "area" : [ 494, 247, 143, 18 ]
+            },
+            "forma" : {
+              "area" : [ 217, 168, 577, 164 ]
+            },
+            "inputi-1" : {
+              "area" : [ 494, 180, 143, 18 ]
+            },
+            "sadrzaj" : {
+              "area" : [ 207, 158, 597, 184 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1573677523289,
+        "type" : "node"
+      } ],
+      "time" : 1573677514099,
+      "type" : "node"
+    } ]
+  }
+}
